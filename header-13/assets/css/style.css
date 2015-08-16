@@ -1,0 +1,321 @@
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 15px;
+	line-height: 26px;
+	font-weight: 400;
+	color: #263238;
+    background-color: #000;
+	/*background-color: #ecf0f1;*/
+	overflow-x: hidden;
+}
+
+
+/* --------------------------------------
+TYPOGRAPHY
+------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 15px;
+	color: #263238;
+	font-weight: 400;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: 700;
+}
+h2 {
+	font-size: 52px;
+}
+h3 {
+	font-size: 46px;
+}
+h4 {
+	font-size: 40px;
+}
+h5 {
+	font-size: 32px;
+}
+h6 {
+	font-size: 28px;
+}
+
+
+
+/* --------------------------------------
+LINK STYLE
+------------------------------------------*/
+a {
+	color: #1abc9c;
+    text-decoration : none;
+    -webkit-transition      : all 0.3s ease 0s;
+    -moz-transition      : all 0.3s ease 0s;
+    -o-transition      : all 0.3s ease 0s;
+    transition      : all 0.3s ease 0s;
+}
+
+a,
+a:active,
+a:focus,
+a:active {
+    text-decoration : none;
+    outline         : none
+}
+
+a:hover,
+a:focus {
+	color: #128B73;
+    text-decoration: none;
+}
+
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+
+
+
+/* =========================================================
+Button Style 
+============================================================ */
+
+.btn {
+    -webkit-transition      : all 0.3s ease 0s;
+    -moz-transition      : all 0.3s ease 0s;
+    -o-transition      : all 0.3s ease 0s;
+    transition      : all 0.3s ease 0s;
+}
+
+button,
+.btn.active.focus, 
+.btn.active:focus, 
+.btn.focus, .btn:active.focus, 
+.btn:active:focus, .btn:focus {
+  outline: none;
+}
+
+
+.btn{
+	font-size: 16px;
+	font-weight: 700;
+}
+.btn-default{
+	background-color: transparent;
+	border: 3px solid #16a085;
+	padding: 11px 37px;
+}
+.btn-primary{
+	background-color: #f1c40f;
+	border-color: transparent;
+	padding: 13px 48px;
+}
+
+
+
+
+
+
+/*Global Margin*/
+.no-margin {
+	margin: 0;
+}
+.mt-50 {
+	margin-top: 50px;
+}
+.mt-100 {
+	margin-top: 100px;
+}
+
+
+
+/* -----------------------------------------
+FORM STYLE 
+-------------------------------------------- */
+
+
+.form-control {
+	height: 46px;
+	background-color: #ecf0f1;
+  	border: 1px solid transparent;	
+  	box-shadow: none;
+	transition: inherit;
+}
+
+.form-control:focus {
+	border-color: #1abc9c;
+	box-shadow: none;
+}
+
+
+
+/* -----------------------------------------
+Offcanvas Menu
+-------------------------------------------- */
+
+#wrapper {
+    padding-right: 250px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-right: 0;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 250px;
+    width: 250px;
+    height: 100%;
+    margin-right: -250px;
+    overflow-y: auto;
+    background: rgba(54, 70, 85, 0.9);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 0;
+}
+#page-content-wrapper {
+    position: relative;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    margin-right: 0;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 40px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    font-size: 16px;
+    line-height: 44px;
+    color: #fff;
+    font-family: 'Gotham-Bold';
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #55A8DC;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    margin-bottom: 50px;
+}
+
+
+
+/*hero-section*/
+.hero-intro {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 30%;
+}
+
+.hero-intro .slider-text{
+    display: block;
+    color: #fff;
+}
+.hero-intro .big-text{
+    font-size: 60px;
+    line-height: 50px;
+    font-family: 'Gotham-Bold';
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.hero-intro .medium-text{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Gotham-Book';
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+.hero-intro .intro-text{
+    font-size: 18px;
+    line-height: 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.hero-intro .explor-btn {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background-color: rgba(41, 128, 185, 0.88);
+}
+
+
+a.sidebar-trigger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    display: block;
+    color: #fff;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+a.sidebar-trigger:hover {
+    color: #fff;
+}
+
+
+
+
+
+
+.si-icons span {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    margin: 40px 30px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.si-icons-hover span {
+    width: 128px;
+    height: 128px;
+    margin: 50px 40px;
+}
